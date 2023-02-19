@@ -42,7 +42,7 @@ export default function App() {
         {getRoutes(routes)}
         <Route path="/inicio" element={<Presentation />} />
         <Route path="/home" element={<Home />} />
-        <Route path="*" element={<Navigate to="/inicio" />} />
+        <Route path="*" element={<Navigate to="/home" />} />
       </Routes>
     </ThemeProvider>
   );
