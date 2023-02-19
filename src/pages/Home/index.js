@@ -53,10 +53,11 @@ function Home() {
           backgroundPosition: "top",
           display: "grid",
           placeItems: "center",
+          opacity: 0.85,
         }}
       >
         <Container>
-          <Grid container item xs={12} lg={9} justifyContent="center" mx="auto">
+          <Grid container item xs={12} lg={12} justifyContent="center" display="flex" mx="auto">
             <MKTypography
               variant="h1"
               color="white"
@@ -71,15 +72,21 @@ function Home() {
             >
               Fast Rio{" "}
             </MKTypography>
-            <br />
+          </Grid>
+          <Grid container item xs={12} lg={12} justifyContent="center" display="flex" mx="auto">
             <MKTypography
               variant="body1"
               color="white"
-              textAlign="center"
+              mt={-1}
+              mb={1}
               px={{ xs: 6, lg: 12 }}
-              mt={1}
+              sx={({ breakpoints, typography: { size } }) => ({
+                [breakpoints.down("md")]: {
+                  fontSize: size["3xl"],
+                },
+              })}
             >
-              Intener en todos lados y para todos!
+              Internet en todos lados y para todos!
             </MKTypography>
           </Grid>
         </Container>
