@@ -56,20 +56,22 @@ function Home() {
         }}
       >
         <Container>
-          <Grid container item xs={12} lg={7} justifyContent="center" mx="auto">
+          <Grid container item xs={12} lg={9} justifyContent="center" mx="auto">
             <MKTypography
               variant="h1"
               color="white"
-              mt={-6}
+              mt={-1}
               mb={1}
+              px={{ xs: 6, lg: 12 }}
               sx={({ breakpoints, typography: { size } }) => ({
                 [breakpoints.down("md")]: {
                   fontSize: size["3xl"],
                 },
               })}
             >
-              Material Kit 2 React{" "}
+              Fast Rio{" "}
             </MKTypography>
+            <br />
             <MKTypography
               variant="body1"
               color="white"
@@ -77,8 +79,7 @@ function Home() {
               px={{ xs: 6, lg: 12 }}
               mt={1}
             >
-              Free & Open Source Web UI Kit built over ReactJS &amp; MUI. Join over 1.6 million
-              developers around the world.
+              Intener en todos lados y para todos!
             </MKTypography>
           </Grid>
         </Container>
@@ -102,60 +103,80 @@ function Home() {
           <BuiltByDevelopers />
         </Container> */}
         <Container>
-          <Grid container spacing={4}>
+          <Grid container spacing={5}>
+            <Grid item xs={12} lg={12} sx={{ textAlign: { xs: "center", lg: "center" } }}>
+              <MKTypography
+                variant="h2"
+                color="secondary"
+                mt={-1}
+                mb={1}
+                px={{ xs: 6, lg: 12 }}
+                sx={({ breakpoints, typography: { size } }) => ({
+                  [breakpoints.down("md")]: {
+                    fontSize: size["3xl"],
+                  },
+                })}
+              >
+                Nuestros Planes de Internet{" "}
+              </MKTypography>
+            </Grid>
             <Grid item xs={12} lg={3}>
               <FilledInfoCard
                 variant="gradient"
-                color="secondary"
+                color="primary"
                 icon="flag"
                 title="Plan Básico"
-                description="Check the possible ways of working with our product and the necessary files for building your own project."
+                description="Costo: $20.00"
+                velocidad="Velocidad: 12mbps"
                 action={{
-                  type: "external",
-                  route: "https://www.creative-tim.com/learning-lab/react/overview/material-kit/",
-                  label: "Let's start",
+                  type: "internal",
+                  route: "/home",
+                  label: "Contratalo",
                 }}
               />
             </Grid>
             <Grid item xs={12} lg={3}>
               <FilledInfoCard
                 variant="gradient"
-                color="secondary"
+                color="primary"
                 icon="flag"
                 title="Plan Home"
-                description="Check the possible ways of working with our product and the necessary files for building your own project."
+                description="Costo: $20.00"
+                velocidad="Velocidad: 12mbps"
                 action={{
                   type: "external",
                   route: "https://www.creative-tim.com/learning-lab/react/overview/material-kit/",
-                  label: "Let's start",
+                  label: "Contratalo",
                 }}
               />
             </Grid>
             <Grid item xs={12} lg={3}>
               <FilledInfoCard
                 variant="gradient"
-                color="secondary"
+                color="primary"
                 icon="flag"
                 title="Plan Smart"
-                description="Check the possible ways of working with our product and the necessary files for building your own project."
+                description="Costo: $20.00"
+                velocidad="Velocidad: 12mbps"
                 action={{
                   type: "external",
                   route: "https://www.creative-tim.com/learning-lab/react/overview/material-kit/",
-                  label: "Let's start",
+                  label: "Contratalo",
                 }}
               />
             </Grid>
             <Grid item xs={12} lg={3}>
               <FilledInfoCard
                 variant="gradient"
-                color="secondary"
+                color="primary"
                 icon="flag"
                 title="Plan Coorporativo"
-                description="Check the possible ways of working with our product and the necessary files for building your own project."
+                description="Costo: $20.00"
+                velocidad="Velocidad: 12mbps"
                 action={{
                   type: "external",
                   route: "https://www.creative-tim.com/learning-lab/react/overview/material-kit/",
-                  label: "Let's start",
+                  label: "Contratalo",
                 }}
               />
             </Grid>
@@ -168,10 +189,10 @@ function Home() {
             <Grid container spacing={3}>
               <Grid item xs={12} lg={5} ml="auto" sx={{ textAlign: { xs: "center", lg: "left" } }}>
                 <MKTypography variant="h4" fontWeight="bold" mb={0.5}>
-                  Thank you for your support!
+                  Gracias por tu atención!
                 </MKTypography>
                 <MKTypography variant="body1" color="text">
-                  We deliver the best web products
+                  Estamos en las siguientes redes sociales
                 </MKTypography>
               </Grid>
               <Grid
@@ -190,7 +211,7 @@ function Home() {
                   sx={{ mr: 1 }}
                 >
                   <i className="fab fa-twitter" />
-                  &nbsp;Tweet
+                  &nbsp;Twitter
                 </MKSocialButton>
                 <MKSocialButton
                   component="a"
@@ -200,16 +221,7 @@ function Home() {
                   sx={{ mr: 1 }}
                 >
                   <i className="fab fa-facebook" />
-                  &nbsp;Share
-                </MKSocialButton>
-                <MKSocialButton
-                  component="a"
-                  href="https://www.pinterest.com/pin/create/button/?url=https://www.creative-tim.com/product/material-kit-react"
-                  target="_blank"
-                  color="pinterest"
-                >
-                  <i className="fab fa-pinterest" />
-                  &nbsp;Pin it
+                  &nbsp;Facebook
                 </MKSocialButton>
               </Grid>
             </Grid>

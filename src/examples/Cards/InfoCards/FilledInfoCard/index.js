@@ -12,7 +12,7 @@ import MuiLink from "@mui/material/Link";
 import MKBox from "components/MKBox";
 import MKTypography from "components/MKTypography";
 
-function FilledInfoCard({ variant, color, icon, title, description, action }) {
+function FilledInfoCard({ variant, color, icon, title, description, velocidad, action }) {
   const buttonStyles = {
     width: "max-content",
     display: "flex",
@@ -74,6 +74,14 @@ function FilledInfoCard({ variant, color, icon, title, description, action }) {
         >
           {description}
         </MKTypography>
+        <MKTypography
+          display="block"
+          variant="body2"
+          color={variant === "contained" || color === "light" ? "text" : "white"}
+          mb={2}
+        >
+          {velocidad}
+        </MKTypography>
         {action && action.type === "external" ? (
           <MKTypography
             component={MuiLink}
@@ -107,6 +115,7 @@ function FilledInfoCard({ variant, color, icon, title, description, action }) {
 
 // Setting default props for the FilledInfoCard
 FilledInfoCard.defaultProps = {
+  velocidad: "nan",
   variant: "contained",
   color: "info",
   action: false,
@@ -128,6 +137,7 @@ FilledInfoCard.propTypes = {
   icon: PropTypes.node.isRequired,
   title: PropTypes.string.isRequired,
   description: PropTypes.string.isRequired,
+  velocidad: PropTypes.string,
   action: PropTypes.oneOfType([
     PropTypes.bool,
     PropTypes.shape({
