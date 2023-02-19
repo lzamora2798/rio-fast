@@ -14,28 +14,28 @@ import DefaultFooter from "examples/Footers/DefaultFooter";
 import FilledInfoCard from "examples/Cards/InfoCards/FilledInfoCard";
 
 // Presentation page sections
-import Counters from "pages/Presentation/sections/Counters";
-import Information from "pages/Presentation/sections/Information";
-import DesignBlocks from "pages/Presentation/sections/DesignBlocks";
-import Pages from "pages/Presentation/sections/Pages";
-import Testimonials from "pages/Presentation/sections/Testimonials";
-import Download from "pages/Presentation/sections/Download";
+import Counters from "pages/Home/sections/Counters";
+// import Information from "pages/Home/sections/Information";
+// import DesignBlocks from "pages/Home/sections/DesignBlocks";
+// import Pages from "pages/Home/sections/Pages";
+import Testimonials from "pages/Home/sections/Testimonials";
+import Download from "pages/Home/sections/Download";
 
-// Presentation page components
-import BuiltByDevelopers from "pages/Presentation/components/BuiltByDevelopers";
+// // Presentation page components
+// import BuiltByDevelopers from "pages/Home/components/BuiltByDevelopers";
 
 // Routes
-import routes from "routes";
+import newroutes from "newRoutes";
 import footerRoutes from "footer.routes";
 
 // Images
-import bgImage from "assets/images/bg-presentation.jpg";
+import bgImage from "assets/images/land.jpg";
 
-function Presentation() {
+function Home() {
   return (
     <>
       <DefaultNavbar
-        routes={routes}
+        routes={newroutes}
         action={{
           type: "external",
           route: "https://www.creative-tim.com/product/material-kit-react",
@@ -95,20 +95,20 @@ function Presentation() {
         }}
       >
         <Counters />
-        <Information />
-        <DesignBlocks />
+        {/* <Information /> */}
+        {/* <DesignBlocks />
         <Pages />
         <Container sx={{ mt: 6 }}>
           <BuiltByDevelopers />
-        </Container>
+        </Container> */}
         <Container>
-          <Grid container spacing={3}>
-            <Grid item xs={12} lg={4}>
+          <Grid container spacing={4}>
+            <Grid item xs={12} lg={3}>
               <FilledInfoCard
                 variant="gradient"
-                color="info"
+                color="secondary"
                 icon="flag"
-                title="Getting Started"
+                title="Plan Básico"
                 description="Check the possible ways of working with our product and the necessary files for building your own project."
                 action={{
                   type: "external",
@@ -117,29 +117,45 @@ function Presentation() {
                 }}
               />
             </Grid>
-            <Grid item xs={12} lg={4}>
+            <Grid item xs={12} lg={3}>
               <FilledInfoCard
-                color="info"
-                icon="precision_manufacturing"
-                title="Plugins"
-                description="Get inspiration and have an overview about the plugins that we used to create the Material Kit."
+                variant="gradient"
+                color="secondary"
+                icon="flag"
+                title="Plan Home"
+                description="Check the possible ways of working with our product and the necessary files for building your own project."
                 action={{
                   type: "external",
-                  route: "https://www.creative-tim.com/learning-lab/react/overview/datepicker/",
-                  label: "Read more",
+                  route: "https://www.creative-tim.com/learning-lab/react/overview/material-kit/",
+                  label: "Let's start",
                 }}
               />
             </Grid>
-            <Grid item xs={12} lg={4}>
+            <Grid item xs={12} lg={3}>
               <FilledInfoCard
-                color="info"
-                icon="apps"
-                title="Components"
-                description="Material Kit is giving you a lot of pre-made components, that will help you to build UI's faster."
+                variant="gradient"
+                color="secondary"
+                icon="flag"
+                title="Plan Smart"
+                description="Check the possible ways of working with our product and the necessary files for building your own project."
                 action={{
                   type: "external",
-                  route: "https://www.creative-tim.com/learning-lab/react/alerts/material-kit/",
-                  label: "Read more",
+                  route: "https://www.creative-tim.com/learning-lab/react/overview/material-kit/",
+                  label: "Let's start",
+                }}
+              />
+            </Grid>
+            <Grid item xs={12} lg={3}>
+              <FilledInfoCard
+                variant="gradient"
+                color="secondary"
+                icon="flag"
+                title="Plan Coorporativo"
+                description="Check the possible ways of working with our product and the necessary files for building your own project."
+                action={{
+                  type: "external",
+                  route: "https://www.creative-tim.com/learning-lab/react/overview/material-kit/",
+                  label: "Let's start",
                 }}
               />
             </Grid>
@@ -207,4 +223,4 @@ function Presentation() {
   );
 }
 
-export default Presentation;
+export default Home;
