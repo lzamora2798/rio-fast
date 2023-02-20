@@ -1,16 +1,16 @@
 // @mui material components
 import Container from "@mui/material/Container";
 import Grid from "@mui/material/Grid";
+import PropTypes from "prop-types";
 
 // Material Kit 2 React components
 import MKBox from "components/MKBox";
-import MKButton from "components/MKButton";
 import MKTypography from "components/MKTypography";
 
 // Images
-import bgImage from "assets/images/logo.png";
+// import bgImage from "assets/images/logo.png";
 
-function Download() {
+function Planes({ bgImage, title, description }) {
   return (
     <MKBox component="section" py={{ xs: 0, sm: 2 }}>
       <MKBox
@@ -25,31 +25,29 @@ function Download() {
           src={bgImage}
           alt="pattern-lines"
           position="absolute"
-          top={0}
+          top={50}
           left={50}
           width={{ xs: "80%", lg: "30%" }}
           zIndex={1}
-          opacity={0.4}
+          opacity={0.6}
         />
         <Container sx={{ position: "relative", zIndex: 2, py: 12 }}>
-          <Grid container item xs={12} md={10} justifyContent="end" mx="auto" textAlign="end">
+          <Grid
+            container
+            item
+            xs={12}
+            md={5}
+            justifyContent="end"
+            ml="auto"
+            textAlign="end"
+            right={10}
+          >
             <MKTypography variant="h3" color="white" mb={1}>
-              Instalacion gratuita!!!
+              {title}
             </MKTypography>
-            <MKTypography variant="body2" color="white" mb={10} left={250}>
-              Parte de nuestros beneficios es la instalación gratuita de nuestros equipos,
-              contáctanos a nuestros números telefónicos para más información.
+            <MKTypography variant="body2" color="white" mb={15}>
+              {description}
             </MKTypography>
-            <MKButton
-              variant="gradient"
-              color="info"
-              size="large"
-              component="a"
-              href="#"
-              sx={{ mb: 2 }}
-            >
-              Contactanos!
-            </MKButton>
           </Grid>
         </Container>
       </MKBox>
@@ -57,4 +55,10 @@ function Download() {
   );
 }
 
-export default Download;
+Planes.propTypes = {
+  bgImage: PropTypes.node.isRequired,
+  title: PropTypes.string.isRequired,
+  description: PropTypes.string.isRequired,
+};
+
+export default Planes;

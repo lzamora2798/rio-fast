@@ -37,7 +37,7 @@ function Home() {
       <DefaultNavbar
         routes={newroutes}
         action={{
-          type: "external",
+          type: "internal",
           route: "https://www.creative-tim.com/product/material-kit-react",
           label: "free download",
           color: "info",
@@ -103,12 +103,6 @@ function Home() {
         }}
       >
         <Counters />
-        {/* <Information /> */}
-        {/* <DesignBlocks />
-        <Pages />
-        <Container sx={{ mt: 6 }}>
-          <BuiltByDevelopers />
-        </Container> */}
         <Container>
           <Grid container spacing={5}>
             <Grid item xs={12} lg={12} sx={{ textAlign: { xs: "center", lg: "center" } }}>
@@ -137,7 +131,7 @@ function Home() {
                 velocidad="Velocidad: 12mbps"
                 action={{
                   type: "internal",
-                  route: "/home",
+                  route: "/servicios",
                   label: "Contratalo",
                 }}
               />
@@ -148,11 +142,11 @@ function Home() {
                 color="primary"
                 icon="flag"
                 title="Plan Home"
-                description="Costo: $20.00"
-                velocidad="Velocidad: 12mbps"
+                description="Costo: $22.00"
+                velocidad="Velocidad: 20mbps"
                 action={{
-                  type: "external",
-                  route: "https://www.creative-tim.com/learning-lab/react/overview/material-kit/",
+                  type: "internal",
+                  route: "/servicios",
                   label: "Contratalo",
                 }}
               />
@@ -163,11 +157,11 @@ function Home() {
                 color="primary"
                 icon="flag"
                 title="Plan Smart"
-                description="Costo: $20.00"
-                velocidad="Velocidad: 12mbps"
+                description="Costo: $24.00"
+                velocidad="Velocidad: 30mbps"
                 action={{
-                  type: "external",
-                  route: "https://www.creative-tim.com/learning-lab/react/overview/material-kit/",
+                  type: "internal",
+                  route: "/servicios",
                   label: "Contratalo",
                 }}
               />
@@ -178,11 +172,11 @@ function Home() {
                 color="primary"
                 icon="flag"
                 title="Plan Coorporativo"
-                description="Costo: $20.00"
-                velocidad="Velocidad: 12mbps"
+                description="Costo: $50.00"
+                velocidad="Velocidad: 50mbps"
                 action={{
-                  type: "external",
-                  route: "https://www.creative-tim.com/learning-lab/react/overview/material-kit/",
+                  type: "internal",
+                  route: "/servicios",
                   label: "Contratalo",
                 }}
               />

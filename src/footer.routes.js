@@ -31,7 +31,7 @@ export default {
       name: "Empresa",
       items: [
         { name: "Inicio", href: "#" },
-        { name: "Servicios", href: "#" },
+        { name: "Servicios", href: "/servicios" },
         { name: "Quienes Somos", href: "#" },
         { name: "Contactanos", href: "#" },
       ],
