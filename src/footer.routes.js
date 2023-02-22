@@ -30,10 +30,10 @@ export default {
     {
       name: "Empresa",
       items: [
-        { name: "Inicio", href: "#" },
-        { name: "Servicios", href: "/servicios" },
-        { name: "Quienes Somos", href: "#" },
-        { name: "Contactanos", href: "#" },
+        { name: "Inicio", route: "/home" },
+        { name: "Servicios", route: "/servicios" },
+        { name: "Quienes Somos", route: "#" },
+        { name: "Contactanos", route: "#" },
       ],
     },
     {

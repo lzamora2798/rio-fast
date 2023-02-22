@@ -121,7 +121,7 @@ function Home() {
                 Nuestros Planes de Internet{" "}
               </MKTypography>
             </Grid>
-            <Grid item xs={12} lg={3}>
+            <Grid item xs={6} lg={3}>
               <FilledInfoCard
                 variant="gradient"
                 color="primary"
@@ -136,7 +136,7 @@ function Home() {
                 }}
               />
             </Grid>
-            <Grid item xs={12} lg={3}>
+            <Grid item xs={6} lg={3}>
               <FilledInfoCard
                 variant="gradient"
                 color="primary"
@@ -151,7 +151,7 @@ function Home() {
                 }}
               />
             </Grid>
-            <Grid item xs={12} lg={3}>
+            <Grid item xs={6} lg={3}>
               <FilledInfoCard
                 variant="gradient"
                 color="primary"
@@ -166,7 +166,7 @@ function Home() {
                 }}
               />
             </Grid>
-            <Grid item xs={12} lg={3}>
+            <Grid item xs={6} lg={3}>
               <FilledInfoCard
                 variant="gradient"
                 color="primary"

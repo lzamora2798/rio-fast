@@ -10,6 +10,7 @@ import theme from "assets/theme";
 import Presentation from "layouts/pages/presentation";
 import Home from "layouts/pages/home";
 import Servicios from "layouts/pages/servicios";
+import WhatsApp from "components/Whatsapp/index";
 
 // Material Kit 2 React routes
 import routes from "routes";
@@ -38,6 +39,7 @@ export default function App() {
 
   return (
     <ThemeProvider theme={theme}>
+      <WhatsApp />
       <CssBaseline />
       <Routes>
         {getRoutes(routes)}
