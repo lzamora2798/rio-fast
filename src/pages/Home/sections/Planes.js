@@ -12,7 +12,7 @@ import MKTypography from "components/MKTypography";
 
 function Planes({ bgImage, title, description }) {
   return (
-    <MKBox component="section" py={{ xs: 0, sm: 2 }}>
+    <MKBox component="section" py={2}>
       <MKBox
         variant="gradient"
         bgColor="dark"
@@ -31,7 +31,9 @@ function Planes({ bgImage, title, description }) {
           zIndex={1}
           opacity={0.6}
         />
-        <Container sx={{ position: "relative", zIndex: 2, py: 12 }}>
+        <Container
+          sx={{ position: "relative", zIndex: 2, py: { xs: 0, lg: 15 }, pt: { xs: 40, lg: 5 } }}
+        >
           <Grid
             container
             item

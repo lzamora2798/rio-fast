@@ -22,7 +22,7 @@ const newroutes = [
   {
     name: "Contactanos",
     icon: <CallIcon />,
-    route: "/home",
+    route: "/contacto",
   },
 ];
 

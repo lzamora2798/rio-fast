@@ -15,6 +15,7 @@ import DefaultFooter from "examples/Footers/DefaultFooter";
 // Routes
 import newroutes from "newRoutes";
 import footerRoutes from "footer.routes";
+// import bgImage from "assets/images/teleco.png";
 
 // Images
 
@@ -57,8 +58,13 @@ function Somos() {
           mx: { xs: 2, lg: 3 },
           mt: -8,
           mb: 4,
+          // backgroundImage: `url(${bgImage})`,
           backgroundColor: ({ palette: { white }, functions: { rgba } }) => rgba(white.main, 0.8),
           backdropFilter: "saturate(200%) blur(30px)",
+          backgroundSize: "cover",
+          backgroundPosition: "top",
+          display: "grid",
+          opacity: 0.85,
           boxShadow: ({ boxShadows: { xxl } }) => xxl,
         }}
       >

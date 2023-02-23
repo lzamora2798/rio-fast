@@ -12,6 +12,7 @@ import Home from "layouts/pages/home";
 import Servicios from "layouts/pages/servicios";
 import Somos from "layouts/pages/somos";
 import WhatsApp from "components/Whatsapp/index";
+import Contacto from "layouts/pages/contacto";
 
 // Material Kit 2 React routes
 import routes from "routes";
@@ -49,6 +50,7 @@ export default function App() {
         <Route path="/servicios" element={<Servicios />} />
         <Route path="/quienes-somos" element={<Somos />} />
         <Route path="*" element={<Navigate to="/home" />} />
+        <Route path="/contacto" element={<Contacto />} />
       </Routes>
     </ThemeProvider>
   );

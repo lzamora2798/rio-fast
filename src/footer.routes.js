@@ -33,7 +33,7 @@ export default {
         { name: "Inicio", route: "/home" },
         { name: "Servicios", route: "/servicios" },
         { name: "Quienes Somos", route: "/quienes-somos" },
-        { name: "Contactanos", route: "#" },
+        { name: "Contactanos", route: "/contacto" },
       ],
     },
     {

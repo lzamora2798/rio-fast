@@ -17,8 +17,6 @@ import coop from "assets/images/coop.png";
 import basico from "assets/images/basico.png";
 import home from "assets/images/home.png";
 import smart from "assets/images/smart.png";
-// // Presentation page components
-// import BuiltByDevelopers from "pages/Home/components/BuiltByDevelopers";
 
 // Routes
 import newroutes from "newRoutes";
