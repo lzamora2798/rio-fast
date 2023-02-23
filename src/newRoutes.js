@@ -17,7 +17,7 @@ const newroutes = [
   {
     name: "Quienes Somos",
     icon: <GroupIcon />,
-    route: "/home",
+    route: "/quienes-somos",
   },
   {
     name: "Contactanos",

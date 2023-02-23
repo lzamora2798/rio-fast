@@ -9,8 +9,8 @@ function WhatsApp() {
     <div
       style={{
         position: "fixed",
-        bottom: "20px",
-        right: "20px",
+        bottom: "35px",
+        right: "35px",
         textAlign: "end",
         color: "green",
         zIndex: "100",

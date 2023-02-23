@@ -32,7 +32,7 @@ export default {
       items: [
         { name: "Inicio", route: "/home" },
         { name: "Servicios", route: "/servicios" },
-        { name: "Quienes Somos", route: "#" },
+        { name: "Quienes Somos", route: "/quienes-somos" },
         { name: "Contactanos", route: "#" },
       ],
     },
