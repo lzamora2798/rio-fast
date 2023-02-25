@@ -37,32 +37,49 @@ export default {
       ],
     },
     {
-      name: "Normas y Regulaciones",
+      name: "Informacion Adicional",
       items: [
         {
-          name: "Norma de Calidad de Servicios de Valor Agregado de Internet",
-          href: "#",
+          name: "Contrato de servicios",
+          href: `${window.location.origin}/Contrato.pdf`,
         },
         {
           name: "Guía de Seguridad y Control de Internet",
-          href: "#",
+          href: `${window.location.origin}/CONSEJOS-DE-SEGURIDAD-DE-INTERNET.pdf`,
         },
         {
-          name: "Normal de Calidad SVA",
-          href: "#",
+          name: "Reglamentos Abonados",
+          href: `${window.location.origin}/reglamentos-abonados.pdf`,
+        },
+        {
+          name: "Ley Organica de Telecomunicaciones",
+          href: `${window.location.origin}/ley_organica_de_telecomunicaciones.pdf`,
         },
       ],
     },
     {
       name: "Enlaces Gubernamentales",
-      items: [{ name: "arcotel", href: "https://www.arcotel.gob.ec/" }],
+      items: [
+        {
+          name: "Arcotel",
+          href: "https://www.arcotel.gob.ec/",
+        },
+        {
+          name: "Mintel",
+          href: "https://www.telecomunicaciones.gob.ec/",
+        },
+        {
+          name: "Presidencia de la republica",
+          href: "https://www.presidencia.gob.ec/",
+        },
+      ],
     },
     {
       name: "Leyes",
       items: [
         {
           name: "LEY ORGÁNICA DE LAS PERSONAS ADULTAS MAYORES (LOPAM)",
-          href: "#",
+          href: `${window.location.origin}/LEY-ORGANICA-DE-LAS-PERSONAS-ADULTAS-MAYORES.pdf`,
         },
       ],
     },

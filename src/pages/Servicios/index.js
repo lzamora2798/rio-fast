@@ -71,22 +71,22 @@ function Servicios() {
         <Planes
           bgImage={basico}
           title="Plan Básico"
-          description="It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English."
+          description="Este plan de internet es dedicado para las personas con necesidades básicas de conexión, que desean ver videos,  películas, escuchar música , chatear y demás actividades de ocio. Su capacidad de 12mbps con compartición de 1:1 simétrica a través de fibra de vidrio permite a los usuarios disfrutar de un internet sin interrupciones."
         />
         <Planes
           bgImage={home}
           title="Plan Home"
-          description="It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English."
+          description="Este plan de internet es dedicado para las familias con necesidades de conexión, que desean utilizar el internet en diferentes dispositivos simultáneamente, Su capacidad de 20mbps con compartición de 1:1 simétrica a través de fibra de vidrio permite a los usuarios disfrutar de un internet sin interrupciones. "
         />
         <Planes
           bgImage={smart}
           title="Plan Smart"
-          description="It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English."
+          description="Este plan de internet es dedicado para las familias con necesidades de conexión, que desean utilizar el internet en su máxima capacidad, como juegos en línea o reuniones online de estudio o trabajo. Su capacidad de 30mbps con compartición de 1:1 simétrica a través de fibra de vidrio permite a los usuarios disfrutar de un internet sin interrupciones."
         />
         <Planes
           bgImage={coop}
           title="Plan Coorporativo"
-          description="It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English."
+          description="Este plan de internet es dedicado para pequeñas o medianas empresas, que desean utilizar el internet con en su máxima capacidad, para descargar constantemente documentos, subirlos de regreso a la web, envió de correos pesados y uso en varios dispositivos. Su capacidad de 50mbps con compartición de 1:1 simétrica a través de fibra de vidrio permite a los usuarios disfrutar de un internet sin interrupciones."
         />
       </Card>
       <MKBox pt={6} px={1} mt={6}>

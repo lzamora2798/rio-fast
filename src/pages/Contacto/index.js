@@ -158,6 +158,21 @@ function Contacto() {
                 },
               })}
             >
+              <strong> Horario de atención : </strong> 9:00 am - 17:00 pm
+            </MKTypography>
+            <MKTypography
+              variant="body1"
+              color="black"
+              text
+              mt={1}
+              mb={1}
+              px={{ xs: 6, lg: 12 }}
+              sx={({ breakpoints, typography: { size } }) => ({
+                [breakpoints.down("md")]: {
+                  fontSize: size["1sm"],
+                },
+              })}
+            >
               <strong> Direccción: </strong> César Dávila Andrade y Pedro Fermín Cevallos
             </MKTypography>
           </Grid>
