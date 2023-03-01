@@ -70,7 +70,7 @@ function Home() {
                 },
               })}
             >
-              Fast Rio{" "}
+              Rio Fast{" "}
             </MKTypography>
           </Grid>
           <Grid container item xs={12} lg={12} justifyContent="center" display="flex" mx="auto">

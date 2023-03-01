@@ -12,7 +12,7 @@ const date = new Date().getFullYear();
 
 export default {
   brand: {
-    name: "Fast Rio",
+    name: "Rio Fast",
     image: logoCT,
     route: "/",
   },
