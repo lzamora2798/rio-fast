@@ -80,7 +80,15 @@ function FilledInfoCard({ variant, color, icon, title, description, velocidad, a
           color={variant === "contained" || color === "light" ? "text" : "white"}
           mb={2}
         >
-          {velocidad}
+          {velocidad} Simetrico
+        </MKTypography>
+        <MKTypography
+          display="block"
+          variant="body2"
+          color={variant === "contained" || color === "light" ? "text" : "white"}
+          mb={2}
+        >
+          {"Precio incluye iva "}
         </MKTypography>
         {action && action.type === "external" ? (
           <MKTypography

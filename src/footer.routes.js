@@ -55,6 +55,10 @@ export default {
           name: "Ley Organica de Telecomunicaciones",
           href: `${window.location.origin}/ley_organica_de_telecomunicaciones.pdf`,
         },
+        {
+          name: "Calidad de servicio",
+          href: `${window.location.origin}/calidad.pdf`,
+        },
       ],
     },
     {
